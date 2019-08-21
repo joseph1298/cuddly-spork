@@ -1,0 +1,86 @@
+<html>
+    
+<head>
+    <title>Service Finder</title>
+    
+<script>
+    
+function validateForm() {
+    
+    var zipcode = document.forms["myForm"]["zipcode"].value;
+    
+    
+    
+  if (zipcode == "") {
+    alert("Please make sure all the fields are filled out!");
+    return false;
+    
+    
+}    
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>     
+    
+
+    
+</head>
+
+<body>
+   <form name="myForm" action="http://localhost/servfind.php" onsubmit="return validateForm()" method="post"> 
+    
+<center><h1>Service Finder</h1></center>
+ 
+<br>
+    
+        
+    
+    <table>
+        
+      <tr> 
+       <td>  Service Provider Type: </td>
+       
+<td>
+       <select name="svc_pro_type">
+      
+      <option value="Electrician">Electrician</option>
+       <option value="Carpenter">Carpenter</option>     <option value="Plumber">Plumber</option>    <option value="Painter">Painter</option>    
+     <option value="Landscaper">Landscaper</option>
+          
+     </select>
+    </td>
+  </tr>  
+  
+ 
+  <tr><td>Zip Code:</td>
+  <td><input type="text" name="zipcode"></td>
+        </tr>
+ 
+
+   
+	
+  
+   
+        <tr><td><td colspan="2"> <input type="Submit"></td></tr>
+      </table>
+</form> 
+
+    
+ 
+      
+      
+      
+
+  
+    
+    </body>  
+
+</html>
