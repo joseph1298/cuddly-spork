@@ -65,7 +65,7 @@ if($result = mysqli_query($link, $service_finder_sql)){
                 echo "<td>" . $row['first_name'] . "</td>";
                 echo "<td>" . $row['last_name'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
-                echo "<td>" . $row['phone'] . "</td>";
+                echo "<td>" . $row['phone_number'] . "</td>";
 
             echo "</tr>";
         }
